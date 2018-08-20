@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Open Mic</title></head>
+<link href="open.mic.css" rel="stylesheet" type="text/css">
+<script src="open.mic.js"></script>
+<body>
+  <div class="backgroundfill">
+  </div>
+  <img class="menuborder"src="menu.png" alt="menu">
+  <div class="menu">
+    <a href="home.html">Home  </a>
+    <a href="open.mic.html">How it works  </a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="upload.html">Upload your video</a>
+  </div>
+  <div class="grid">
+    <div class="header">
+      <img class="imgheader"src="Header.png" alt="header">
+    </div>
+    <div class="spacer">
+      &nbsp
+    </div>
+  </div>
+  <div class="video-display">
+  <form action="https://upload.embed.ly/1/video?key=YOUR_API_KEY" method="POST" enctype="multipart/form-data">
+  <input id="video_file" name="video_file" type="file">
+  <input type="submit" class="button" value="Upload">
+  </form>
+  </div>
+</body>
+</html>
